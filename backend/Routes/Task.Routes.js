@@ -52,19 +52,6 @@ TaskRouter.post("/create", async (req, res) => {
   }
 });
 
-// // Create a Task
-// TaskRouter.post("/create", authMiddleware, async (req, res) => {
-//   const { title, description, dueDate, priority } = req.body;
-//   try {
-//     //const task = new TaskModel({ ...req.body });
-//     const task = new Task({ title, description, dueDate, priority, userId: req.userId });
-//     await task.save();
-//     res.send({ msg: "New Task has been added", task: req.body });
-//   } catch (error) {
-//     res.status(500).send({ error: error.message });
-//   }
-// });
-
 // Update Task
 TaskRouter.put("/update/:id", async (req, res) => {
   try {
