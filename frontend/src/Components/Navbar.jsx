@@ -39,7 +39,7 @@ const Navbar = () => {
           padding={"20px"}
         >
           <Box>
-            <Link to="/">Task Manager</Link>
+            <Link to="/">Task Management System</Link>
           </Box>
 
           <Flex alignItems={"center"}>
